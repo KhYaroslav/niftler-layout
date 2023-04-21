@@ -1,11 +1,10 @@
+.main {
+  margin-bottom: 130px;
+}
+
 .main__items {
   display: flex;
   flex-wrap: wrap;
-}
-
-.main__container {
-  margin: 0 auto;
-  max-width: 1250px;
 }
 
 .intro {

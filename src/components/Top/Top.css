@@ -1,0 +1,131 @@
+.top__seller {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 83px;
+  position: relative;
+}
+
+.top__seller-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  position: relative;
+}
+
+.top__seller-title-background {
+  position: absolute;
+  width: 124px;
+  height: 53px;
+  z-index: -1;
+  background: #8F20A1;
+  filter: blur(60px);
+}
+
+.select__wrapper {
+  position: relative;
+}
+
+.select__wrapper::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 33px;
+  height: 28px;
+  background: url(../../assets/svg/select-arrow-icon.svg) no-repeat left center;
+  pointer-events: none;
+}
+
+.top__seller-select {
+  width: 249px;
+  appearance: none;
+  padding: 17px 20px;
+  background-color: transparent;
+  border: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.top__seller-option {
+  background-color: transparent;
+}
+
+.top__cards {
+  position: absolute;
+  left: 14%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 65px;
+  row-gap: 60px;
+}
+
+.top__card {
+  display: flex;
+  padding: 20px 32px 20px 20px;
+  background: #2E272E;
+  max-width: 295px;
+  max-height: 143px;
+  border: 1px solid #5C1765;
+  border-radius: 10px;
+}
+
+.top__card-img {
+  margin-right: 20px;
+}
+
+.top__card-pic {
+  border-radius: 12px;
+}
+
+.top__card-name {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 123px;
+}
+
+.top__card-price {
+  display: flex;
+  margin-bottom: 20px;
+  max-width: 123px;
+}
+
+.top__card-price-sum {
+  font-weight: 200;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.top__card-price-eth {
+  padding-left: 4px;
+  font-weight: 400;
+  color: #CB66DB;
+}
+
+.top__card-info-img {
+  padding: 6px 8px;
+  margin-right: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.top__card-info-telegram {
+  padding: 6px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 5px;
+  cursor: pointer;
+}

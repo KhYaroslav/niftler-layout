@@ -16,21 +16,21 @@ export default function Header() {
         </div>
         <nav className='header__list'>
           <ul className='header__list-items'>
-            <li className='header__list-item'>
+            <Link to='#!' className='header__list-item'>
               Home
-            </li>
-            <li className='header__list-item'>
+            </Link>
+            <Link to='#!' className='header__list-item'>
               Market
-            </li>
-            <li className='header__list-item'>
+            </Link>
+            <Link to='#!' className='header__list-item'>
               Discover
-            </li>
-            <li className='header__list-item'>
+            </Link>
+            <Link to='#!' className='header__list-item'>
               Commonity
-            </li>
-            <li className='header__list-item'>
+            </Link>
+            <Link to='#!' className='header__list-item'>
               Wallet
-            </li>
+            </Link>
           </ul>
         </nav>
         <div className='header__explors'>

@@ -5,12 +5,12 @@ import nft from '../../assets/svg/nft-1.svg'
 export default function Main() {
   return (
   <main className='main'>
-    <div className='main__container'>
+    <div className='container'>
       <div className='main__items'>
         
         <div className="intro">
           <h1 className='intro__title'>
-          Disсover, collect and selldope NFTs
+          Disсover, collect and sell dope NFTs
           </h1>
           <p className='intro__subtitle'>
           The wold largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs)
