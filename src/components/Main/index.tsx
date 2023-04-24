@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './Main.css'
+import './style.css'
 import nft from '../../assets/svg/nft-1.svg'
 
 export default function Main() {

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import './Top.css'
+import './style.css'
 import top_1 from '../../assets/img/top-1.jpg'
 import top_2 from '../../assets/img/top-2.jpg'
 import top_3 from '../../assets/img/top-3.jpg'
@@ -59,6 +59,10 @@ export default function Top() {
             </div>
           </div>
           )}
+        </div>
+        <div className='top__page'>
+          <div className='top__page-switching-left'></div>
+          <div className='top__page-switching-right'></div>
         </div>
       </div>
     </div>

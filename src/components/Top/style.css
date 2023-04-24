@@ -1,3 +1,7 @@
+.top {
+  margin-bottom: 144px;
+}
+
 .top__seller {
   display: flex;
   flex-wrap: wrap;
@@ -62,6 +66,7 @@
   grid-template-columns: repeat(4, 1fr);
   column-gap: 65px;
   row-gap: 60px;
+  margin-bottom: 30px;
 }
 
 .top__card {
@@ -128,4 +133,25 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 5px;
   cursor: pointer;
+}
+
+.top__page {
+  display: flex;
+}
+
+.top__page-switching-left {
+  background: url(../../assets/svg/arrow-page-left-icon.svg) no-repeat center;
+  border: 1px solid rgba(204, 84, 220, 0.17);
+  border-radius: 7px;
+  width: 35px;
+  height: 31px;
+  margin-right: 24px;
+}
+
+.top__page-switching-right {
+  width: 35px;
+  height: 31px;
+  background: url(../../assets/svg/arrow-page-right-icon.svg) no-repeat center;
+  border: 1px solid rgba(204, 84, 220, 0.17);
+  border-radius: 7px;
 }
