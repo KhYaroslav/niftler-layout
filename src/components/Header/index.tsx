@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
 
+  const Links = ['Home', 'Market', 'Discover', 'Commonity', 'Wallet']
+
   return (
     <div className="header">
       <div className='header__wrapper'>
@@ -16,21 +18,10 @@ export default function Header() {
         </div>
         <nav className='header__list'>
           <ul className='header__list-items'>
-            <Link to='#!' className='header__list-item'>
-              Home
-            </Link>
-            <Link to='#!' className='header__list-item'>
-              Market
-            </Link>
-            <Link to='#!' className='header__list-item'>
-              Discover
-            </Link>
-            <Link to='#!' className='header__list-item'>
-              Commonity
-            </Link>
-            <Link to='#!' className='header__list-item'>
-              Wallet
-            </Link>
+            {Links.map((link) =>
+              <Link to='#!' className='header__list-item'>
+                {link}
+              </Link>)}
           </ul>
         </nav>
         <div className='header__explors'>
