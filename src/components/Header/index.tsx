@@ -14,7 +14,6 @@ export default function Header() {
             <img src={logo} alt="nifter" className='header__logo-pic'/>
             <p className='header__logo-title'>Nifter</p>
           </Link>
-          <div className='header__logo-pic-background'/>
         </div>
         <nav className='header__list'>
           <ul className='header__list-items'>

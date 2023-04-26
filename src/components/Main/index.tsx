@@ -39,7 +39,6 @@ export default function Main() {
           <div className='auction__items'>
             <div className='auction__content'>
                 <img src={nft} alt="nft" className='auction__item-pic' />
-                <div className='auction__item-pic-background'/>
             </div>
             <div className='auction__info'>
               <div className='auction__info-bid'>

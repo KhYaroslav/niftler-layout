@@ -18,7 +18,8 @@
   position: relative;
 }
 
-.header__logo-pic-background {
+.header__logo::after {
+  content: '';
   position: absolute;
   top: -50%;
   left: 20%;

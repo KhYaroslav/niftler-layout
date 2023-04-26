@@ -27,7 +27,6 @@ export default function Top() {
         
         <div className='top__seller'>
           <h3 className='top__seller-title'>Top seller</h3>
-          <div className='top__seller-title-background' />
           <div className='select__wrapper'>
             <select name="" id="" className='top__seller-select'>
               <option className='top__seller-option'>Today</option>

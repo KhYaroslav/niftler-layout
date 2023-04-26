@@ -3,6 +3,7 @@ import Header  from './components/Header';
 import Main from './components/Main';
 import Top from './components/Top/intex';
 import LiveAuction from './components/LiveAuction';
+import Collection from './components/Collection/intex';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Main />
       <Top />
       <LiveAuction />
+      <Collection />
     </>
   )
 }

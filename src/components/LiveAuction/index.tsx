@@ -35,12 +35,11 @@ export default function LiveAuction() {
             modules={[Navigation, Pagination]}
             spaceBetween={30}
             slidesPerView={3}
-            navigation={true}
             centeredSlides={true}
-            // navigation={{
-            //   prevEl: '.prev-element',
-            //   nextEl: '.next-element',
-            // }}
+            navigation={{
+              prevEl: '.prev-element',
+              nextEl: '.next-element',
+            }}
           >
         {items.map((item, index) => (
           <SwiperSlide>
@@ -74,6 +73,8 @@ export default function LiveAuction() {
             </div>
           </SwiperSlide>
         ))}
+          <div className="swiper-button-prev prev-element"/>
+          <div className="swiper-button-next next-element"/>
           </Swiper>
         </div>
 

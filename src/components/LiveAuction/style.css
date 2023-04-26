@@ -1,3 +1,7 @@
+.auctions {
+  margin-bottom: 130px;
+}
+
 .auctions__wrapper {
   padding: 0 90px;
 }
@@ -156,6 +160,24 @@
   font-size: 15px;
   line-height: 18px;
   color: #FFFFFF;
+}
+
+.prev-element {
+  background: url(../../assets/svg/arrow-left-circle-icon.svg) no-repeat;
+  background-size: 41px;
+}
+
+.next-element {
+  background: url(../../assets/svg/arrow-right-circle-icon.svg) no-repeat;
+  background-size: 41px;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-next::after {
+  display: none;
 }
 
 .auctions__item-link-bid:hover, .auction__item-link-view:hover {

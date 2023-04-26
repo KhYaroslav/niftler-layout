@@ -70,7 +70,8 @@
   position: relative;
 }
 
-.auction__item-pic-background {
+.auction__content::before {
+  content: '';
   position: absolute;
   bottom: 20%;
   left: 0;

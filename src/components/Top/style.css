@@ -16,7 +16,8 @@
   position: relative;
 }
 
-.top__seller-title-background {
+.top__seller-title::before {
+  content: '';
   position: absolute;
   width: 124px;
   height: 53px;
