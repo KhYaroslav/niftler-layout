@@ -7,6 +7,7 @@ import Collection from './components/Collection/intex';
 import Artworks from './components/Artworks';
 import Info from './components/Info/intex';
 import Creator from './components/Creator/intex';
+import Footer from './components/Footer/intex';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Artworks />
       <Info />
       <Creator />
+      <Footer />
     </>
   )
 }
