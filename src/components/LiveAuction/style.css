@@ -185,3 +185,8 @@
 .auctions__item-link-bid:hover, .auction__item-link-view:hover {
   opacity: .75;
 }
+
+.artworks__category-item-active {
+  background: rgba(217, 217, 217, 0.07);
+  border-radius: 12px 12px 0px 0px;
+}

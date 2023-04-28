@@ -4,6 +4,7 @@ import Main from './components/Main';
 import Top from './components/Top/intex';
 import LiveAuction from './components/LiveAuction';
 import Collection from './components/Collection/intex';
+import Artworks from './components/Artworks';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <Top />
       <LiveAuction />
       <Collection />
+      <Artworks />
     </>
   )
 }

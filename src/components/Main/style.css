@@ -105,6 +105,7 @@
 .auction__info-ends-items {
   display: flex;
   margin-top: 7px;
+  max-width: 200px;
 }
 
 .auction__info-ends-item {

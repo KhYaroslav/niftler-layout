@@ -20,6 +20,8 @@ export default function Top() {
     { img: top_5, name: 'Zain Berty', price: '42.4' },
     { img: top_6, name: 'Jordyn Nis', price: '885.6' },
   ]
+
+  
   
   return (
    <div className='top'>

@@ -1,0 +1,32 @@
+.artworks__title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.artworks__category {
+  width: 1016px;
+  margin: 0 auto;
+}
+
+.artworks__category-items {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.artworks__category-item {
+  margin-right: 87px;
+  padding-bottom: 15px;
+}
+
+.artworks__category-items::before {
+  position: absolute;
+  content: '';
+  width: 77%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  left: 10%;
+  top: 30px;
+}

@@ -1,8 +1,25 @@
 import { Link } from 'react-router-dom'
 import './style.css'
 import nft from '../../assets/svg/nft-1.svg'
+import { useEffect, useState } from 'react';
 
 export default function Main() {
+  const [timeLeft, setTimeLeft] = useState(24 * 60 * 60); // 24 hours in seconds
+
+  useEffect(() => {
+    const countdownTimer = setInterval(() => {
+      setTimeLeft(prevTimeLeft => prevTimeLeft - 1);
+    }, 1000);
+
+    return () => clearInterval(countdownTimer);
+  }, []);
+
+  const hours = Math.floor(timeLeft / 3600);
+  const minutes = Math.floor((timeLeft - hours * 3600) / 60);
+  const seconds = timeLeft % 60;
+
+  const time = { hours, minutes, seconds };
+      
   return (
   <main className='main'>
     <div className='container'>
@@ -50,16 +67,16 @@ export default function Main() {
               <div className='auction__info-ends'>
                 <span className='auction__info-first'>Auction ends in</span>
                 <ul className='auction__info-ends-items'>
+                      <li className='auction__info-ends-item' >
+                        <p className='auction__info-second'>{time.hours}</p>
+                        <p className='auction__info-last'>Hours</p>
+                      </li>
                   <li className='auction__info-ends-item'>
-                    <p className='auction__info-second'>18</p>
-                    <p className='auction__info-last'>Hours</p>
-                  </li>
-                  <li className='auction__info-ends-item'>
-                    <p className='auction__info-second'>25</p>
+                      <p className='auction__info-second'>{time.minutes}</p>
                     <p className='auction__info-last'>Mins</p>
                   </li>
                   <li className='auction__info-ends-item'>
-                    <p className='auction__info-second'>32</p>
+                    <p className='auction__info-second'>{time.seconds}</p>
                     <p className='auction__info-last'>Secs</p>
                   </li>
                 </ul>
