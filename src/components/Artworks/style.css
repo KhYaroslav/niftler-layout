@@ -18,8 +18,8 @@
 }
 
 .artworks__category-item {
-  margin-right: 87px;
-  padding-bottom: 15px;
+  margin-right: 55px;
+  padding: 15px 15px;
 }
 
 .artworks__category-items::before {
@@ -27,6 +27,117 @@
   content: '';
   width: 77%;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  left: 10%;
-  top: 30px;
+  left: 10.4%;
+  top: 50px;
+}
+
+.artworks__category-item-active {
+  background: rgba(217, 217, 217, 0.07);
+  border-radius: 12px 12px 0px 0px;
+  height: 50px;
+}
+
+.artworks__category {
+  margin-bottom: 70px;
+}
+
+.artworks__card {
+  background: #2E0833;
+  border-radius: 27px;
+  width: 265px;
+  height: 411px;
+  padding: 10px 10px 130px 10px;
+  margin-right: 26px;
+}
+
+.artworks__card-pic {
+  object-fit: cover;
+  width: 245px;
+  height: 271px;
+  border-radius: 29px 29px 0px 0px;
+  margin-bottom: 10px;
+}
+
+.artworks__cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.artworks__card:last-child {
+  margin-right: 0;
+}
+
+.artworks__card-desc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.artworks__card-desc-left, .artworks__card-desc-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.artworks__card-desc-title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 5px;
+}
+
+.artworks__card-desc-author {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.artworks__card-desc-price {
+  margin: 4px 0 20px 0;
+  padding: 3px 12px;
+  border: 1px solid #A658B3;
+  border-radius: 10px;
+}
+
+.artworks__card-desc-likes {
+  background: url(../../assets/svg/heart-big-icon.svg) no-repeat center left;
+  padding-left: 38.12px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.artworks__card-desc-right {
+  position: relative;
+}
+
+.artworks__card-desc-right::before {
+  content: '';
+  position: absolute;
+  width: 58.59px;
+  height: 69px;
+  bottom: 0px;
+  left: 0px;
+  background: #D000F3;
+  filter: blur(63px);
+}
+
+.artworks-link {
+  display: flex;
+  justify-content: center;
+}
+
+.artworks-link-more {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 10px 29px;
+  background: #A658B3;
+  box-shadow: 3px 3px 14px rgba(166, 88, 179, 0.36);
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+
+.artworks-link-more:hover {
+  opacity: .75;
 }
