@@ -5,6 +5,8 @@ import Top from './components/Top/intex';
 import LiveAuction from './components/LiveAuction';
 import Collection from './components/Collection/intex';
 import Artworks from './components/Artworks';
+import Info from './components/Info/intex';
+import Creator from './components/Creator/intex';
 
 export default function App() {
   return (
@@ -15,6 +17,8 @@ export default function App() {
       <LiveAuction />
       <Collection />
       <Artworks />
+      <Info />
+      <Creator />
     </>
   )
 }
