@@ -8,7 +8,7 @@
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
   
   justify-content: space-between;
   padding: 63px 60px;
@@ -52,6 +52,9 @@
 .header__list-item {
   margin-right: 30px;
   transition: 0.2s all;
+}
+
+.header__list-item-link {
   color: #FFFFFF;
 }
 
@@ -87,3 +90,131 @@
 .header__expolors-field:focus, .header__expolors-field:active {
   background: none;
 }
+
+.header__burger {
+  width: 40px;
+  height: 28px;
+  position: relative;
+  display: none;
+}
+
+.burger__line {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+  left: 0;
+}
+
+.burger__line-first {
+  top: 0;
+}
+
+.burger__line-second {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger__line-third {
+ bottom: 0;
+}
+
+.header__list-close {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .header__wrapper {
+    padding: 33px 30px;
+  }
+  
+  .header__burger {
+    display: block;
+    order: 3;
+    margin-left: 20px;
+  }
+
+  .header__list {
+    width: 100%;
+    height: 100%;
+    background-color: #1F1721;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    padding: 75px;
+    transform: translateY(-100%);
+    transition: .3s all linear;
+  }
+
+  .header__list-item-link {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .header__list-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .header__list-active {
+    transform: translateY(0);
+  }
+
+  .header__list-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .header__list-item:last-child {
+    margin-bottom: 0px;
+  }
+
+  .header__list-close {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+  }
+
+  .header__explors-items {
+    margin-left: auto;
+  }
+
+}
+
+@media screen and (max-width: 791px) {
+
+  .header__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+
+  .header__burger {
+    margin-left: 0px;
+    order: 0;
+    justify-self: end;
+  }
+
+  .header__explors-items {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 571px) {
+
+  .header__explors-items {
+    grid-column-end: span 2;
+  }
+
+}
+
+
