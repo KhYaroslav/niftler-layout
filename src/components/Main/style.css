@@ -1,5 +1,6 @@
 .main {
   margin-bottom: 130px;
+  padding-top: 40px;
 }
 
 .main__items {
@@ -50,6 +51,7 @@
   padding-left: 28px;
   background: url(../../assets/svg/polygon-icon.svg) no-repeat left center;
   margin-bottom: 20px;
+  white-space: nowrap;
 }
 
 .intro__stats-index {
@@ -232,6 +234,73 @@
 
   .auction__info-ends {
     margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+
+  .main {
+    margin-bottom: 220px;
+  }
+  
+  .auction__items {
+    left: 0;
+  }
+
+  .auction__info {
+    left: 70px;
+    bottom: -30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .auction__info {
+    padding: 19px 22px;
+  }
+
+  .auction__info {
+    padding: 17px 12px;
+    max-width: 265px;
+    height: 200px;
+  }
+
+  .auction__info-ends-item {
+    margin-right: 0;
+  }
+
+  .auction__info-action {
+    flex-direction: unset;
+  }
+
+  .auction__info-first, .auction__info-last {
+    font-size: 14px;
+  }
+
+  .auction__info-action-bid, .auction__info-action-see {
+   height: 45px;
+   font-size: 14px;
+   padding: 10px 10px;
+  }
+
+  .auction__info-action-bid {
+    margin-right: 10px;
+  }
+
+  .auction__info-second {
+    font-size: 20px;
+  }
+
+  .auction__info-bid {
+    margin-right: 40px;
+  }
+
+  .auction__info-ends {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .intro__subtitle {
+    max-width: 320px;
   }
 }
 

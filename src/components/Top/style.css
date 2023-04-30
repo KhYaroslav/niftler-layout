@@ -189,6 +189,13 @@
 
 }
 
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 571px) {
   
+  .top__seller {
+    flex-wrap: wrap;
+  }
+
+  .top__seller-title {
+    margin: 0 20px 20px 0;
+  }
 }
